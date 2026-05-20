@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     backend_url: str = os.getenv("BACKEND_URL", "https://arcade-hub-3.onrender.com")
 
     # CORS
-    cors_origins: str = os.getenv("CORS_ORIGINS", "*")
+    cors_origins: str = os.getenv("CORS_ORIGINS", "https://arcade-hub-fullstack-fixed.onrender.com")
 
     # SMTP (use any free provider: Gmail app password, Brevo, Mailtrap, etc.)
     smtp_host: str = os.getenv("SMTP_HOST", "smtp.gmail.com")
