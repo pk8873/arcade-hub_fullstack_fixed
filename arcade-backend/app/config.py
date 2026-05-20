@@ -27,18 +27,18 @@ class Settings(BaseSettings):
         object.__setattr__(self, "database_url", url)
 
     # Frontend base URL (used in verification emails)
-    frontend_url: str = os.getenv("FRONTEND_URL", "http://localhost:5173")
-    backend_url: str = os.getenv("BACKEND_URL", "http://localhost:8000")
+    frontend_url: str = os.getenv("FRONTEND_URL", "https://arcade-hub-fullstack-fixed.onrender.com")
+    backend_url: str = os.getenv("BACKEND_URL", "https://arcade-hub-fullstack-fixed.onrender.com")
 
     # CORS
     cors_origins: str = os.getenv("CORS_ORIGINS", "*")
 
     # SMTP (use any free provider: Gmail app password, Brevo, Mailtrap, etc.)
-    smtp_host: str = os.getenv("SMTP_HOST", "")
+    smtp_host: str = os.getenv("SMTP_HOST", "smtp.gmail.com")
     smtp_port: int = int(os.getenv("SMTP_PORT", "587"))
-    smtp_user: str = os.getenv("SMTP_USER", "")
-    smtp_password: str = os.getenv("SMTP_PASSWORD", "")
-    smtp_from: str = os.getenv("SMTP_FROM", "no-reply@arcadehub.local")
+    smtp_user: str = os.getenv("SMTP_USER", "www.patnametro.com@gmail.com")
+    smtp_password: str = os.getenv("SMTP_PASSWORD", "qghe tihx cygr gybq")
+    smtp_from: str = os.getenv("SMTP_FROM", "www.patnametro.com@gmail.com")
     smtp_tls: bool = os.getenv("SMTP_TLS", "true").lower() == "true"
 
     # If true, emails are printed to console instead of sent (great for local dev).
