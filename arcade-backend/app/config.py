@@ -28,7 +28,7 @@ class Settings(BaseSettings):
 
     # Frontend base URL (used in verification emails)
     frontend_url: str = os.getenv("FRONTEND_URL", "https://arcade-hub-fullstack-fixed.onrender.com")
-    backend_url: str = os.getenv("BACKEND_URL", "https://arcade-hub-fullstack-fixed.onrender.com")
+    backend_url: str = os.getenv("BACKEND_URL", "https://arcade-hub-3.onrender.com")
 
     # CORS
     cors_origins: str = os.getenv("CORS_ORIGINS", "*")
